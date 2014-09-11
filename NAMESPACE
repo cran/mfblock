@@ -1,0 +1,7 @@
+importFrom("nloptr","nloptr")
+importFrom("boot","boot")
+import("skewt")
+S3method(summary,fitmfblock)
+S3method(print,summary.fitmfblock)
+export("mfblock","rmfblock","smm","add_dist","get_dist","rm_dist")
+useDynLib(mfblock,.registration = TRUE)
